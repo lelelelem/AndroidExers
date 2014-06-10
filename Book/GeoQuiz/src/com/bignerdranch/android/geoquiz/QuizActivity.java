@@ -19,7 +19,10 @@ public class QuizActivity extends ActionBarActivity {
 
 	private Button mTrueButton;
 	private Button mFalseButton;
+	
 	private Button mNextButton;
+	private Button mPrevButton;
+	
 	private TextView mQuestionTextView;
 	
 	private TrueFalse[] mQuestionBank = new TrueFalse[]{
@@ -43,8 +46,9 @@ public class QuizActivity extends ActionBarActivity {
         
         mTrueButton = (Button)findViewById(R.id.true_button);
         mFalseButton = (Button)findViewById(R.id.false_button);
-        mNextButton = (Button)findViewById(R.id.next_button);
        
+        mNextButton = (Button)findViewById(R.id.next_button);
+        mPrevButton = (Button)findViewById(R.id.prev_button);
         
         mTrueButton.setOnClickListener(new View.OnClickListener() {			
 			@Override
@@ -67,12 +71,31 @@ public class QuizActivity extends ActionBarActivity {
 			}
 		});
         
+        mPrevButton.setOnClickListener(new View.OnClickListener() {			
+			@Override
+			public void onClick(View v) {
+				mPrevQuestion();
+			}
+		});
 
     }
     
     private void mNextQuestion(){
-    	mCurrentIndex = (++mCurrentIndex)% mQuestionBank.length;
+    	mCurrentIndex = (mCurrentIndex+1)==mQuestionBank.length ? mQuestionBank.length-1:++mCurrentIndex%mQuestionBank.length;
+    	
+    	if (mQuestionBank.length==mCurrentIndex+1)
+    			Toast.makeText(QuizActivity.this, R.string.end_of_questions, Toast.LENGTH_SHORT).show();
+    	
 		mQuestionTextView.setText(mQuestionBank[mCurrentIndex].getQuestion());
+    }
+    
+    private void mPrevQuestion(){
+    	mCurrentIndex = (mCurrentIndex-1)<0 ? 0:--mCurrentIndex%mQuestionBank.length;
+    	
+     	if (mCurrentIndex==0)
+			Toast.makeText(QuizActivity.this, R.string.start_of_questions, Toast.LENGTH_SHORT).show();
+    	
+    	mQuestionTextView.setText(mQuestionBank[mCurrentIndex].getQuestion());
     }
     
     private void mChecker(boolean answer){
