@@ -67,7 +67,6 @@ public class QuizActivity extends ActionBarActivity{
 	private View.OnClickListener mNextButtonListener = new OnClickListener() {		
 		@Override
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
 			mNextQuestion();
 		}
 	};
@@ -75,8 +74,7 @@ public class QuizActivity extends ActionBarActivity{
 	private View.OnClickListener mPrevButtonListener = new OnClickListener() {		
 		@Override
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			mPrevQuestion();
+					mPrevQuestion();
 		}
 	};
 	
@@ -121,9 +119,7 @@ public class QuizActivity extends ActionBarActivity{
     	if (data == null) {
     	return;
     	}
-    	mIsCheater = 
-    			data.getBooleanExtra(CheatActivity.HAS_CHEATED, 
-    	false);
+    	mIsCheater = data.getBooleanExtra(CheatActivity.HAS_CHEATED, false);
     }
 
     @Override
