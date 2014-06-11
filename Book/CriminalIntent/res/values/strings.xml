@@ -7,5 +7,13 @@
     
     <string name="crime_title_hint">Enter Title For Crime</string>
     
+    <string name="crime_title_label">Title</string>
+    
+    <string name="date_label">Date</string>
+    
+    <string name="crime_solved_label">Solved?</string>
+    
+    
+    
 
 </resources>
