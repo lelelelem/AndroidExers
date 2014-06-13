@@ -1,8 +1,9 @@
 package com.lemuelcastro.android.criminalintent;
 
-
 import java.util.Date;
 import java.util.UUID;
+
+
 
 public class Crime {
 

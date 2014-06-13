@@ -33,7 +33,7 @@ public class CrimeListFragment extends ListFragment {
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		Crime c = ((CrimeAdapter)getListAdapter()).getItem(position);
 		
-		Intent intent = new Intent(getActivity(),CrimeActivity.class);
+		Intent intent = new Intent(getActivity(),CrimePagerActivity.class);
 		intent.putExtra(CrimeFragment.EXTRA_CRIME_TITLE, c.getId());
 		startActivity(intent);
 	}
@@ -46,7 +46,7 @@ public class CrimeListFragment extends ListFragment {
 			public View getView(int position, View convertView, ViewGroup parent) {
 				// If we weren't given a view, inflate one
 				if (convertView == null) {
-				convertView = getActivity().getLayoutInflater()
+					convertView = getActivity().getLayoutInflater()
 				.inflate(R.layout.list_item_create, null);
 				}
 				

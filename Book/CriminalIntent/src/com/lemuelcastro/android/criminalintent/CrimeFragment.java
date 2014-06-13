@@ -28,6 +28,7 @@ public class CrimeFragment extends Fragment {
 	
 	private CheckBox mSolved;
 	
+	
 	private TextWatcher mTitleListener = new TextWatcher() {
 		
 		@Override
@@ -89,4 +90,15 @@ public class CrimeFragment extends Fragment {
 			return view;
 	}
 	
+	public static CrimeFragment newInstance (UUID crimeId){
+		Bundle argsBundle = new Bundle();
+		
+		argsBundle.putSerializable(EXTRA_CRIME_TITLE, crimeId);
+		
+		CrimeFragment crimeFragment= new CrimeFragment();
+		crimeFragment.setArguments(argsBundle);
+		
+		return crimeFragment;
+		
+	}
 }
