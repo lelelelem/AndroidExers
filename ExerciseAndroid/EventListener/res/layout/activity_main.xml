@@ -28,5 +28,13 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/cancel_button" >
     </Button>
+    
+    <Button
+        android:id="@+id/hello_world_Button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/hello_button" >
+    </Button>
 
 </LinearLayout>
