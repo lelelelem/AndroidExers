@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simple Menu</string>
+    
+    <string name="add_text">Add</string>
+    <string name="edit_text">Edit</string>
+    <string name="delete_text">Delete</string>
+    <string name="copy_text">Copy</string>
+    <string name="paste_text">Paste</string>
+    <string name="exit_text">Exit</string>
+    
+    <string name="show_more_checkbox">Show Hidden</string>
+    
+    <string name="action_settings">Settings</string>
+
+</resources>
