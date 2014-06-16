@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EventListener</string>
+    
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+    
+    <string name="ok_text">OK was Pressed</string>
+    <string name="cancel_text">Cancel was Pressed</string>
+    
+    
+    <string name="action_settings">Settings</string>
+
+</resources>
