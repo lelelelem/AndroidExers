@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lemuel.exercise.contextmenu.MainActivity" >
+
+    <item
+        android:id="@+id/red_context_menu"
+        android:orderInCategory="1"
+        android:title="@string/red_text"/>
+    
+    <item
+        android:id="@+id/blue_context_menu"
+        android:orderInCategory="2"
+        android:title="@string/blue_text"/>
+    
+    <item
+        android:id="@+id/green_context_menu"
+        android:orderInCategory="3"
+        android:title="@string/green_text"/>
+
+</menu>
