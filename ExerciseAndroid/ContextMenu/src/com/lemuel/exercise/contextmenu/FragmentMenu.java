@@ -79,7 +79,7 @@ public class FragmentMenu extends Fragment {
 				mTextSize.setTextSize(26.0f);
 				break;
 			case R.id.thirty_context_menu:
-				mTextSize.setTextSize(30.0f);
+				mTextSize	.setTextSize(30.0f);
 				break;
 		}
 		
