@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dialog</string>
+    <string name="good_button">Be A Good Guy</string>
+    <string name="bad_button">Be A Bad Guy</string>
+    
+    <string name="text_view">Hardest Choice Awaits</string>
+    
+    <string name="bad_dialog">Are You Sure You Want to Make Mars Explode?</string>
+    <string name="good_dialog">Are You Sure You Want To Cure Cancer?</string>
+    
+    <string name="bad_choice_positive">Make It Explode</string>
+    <string name="bad_choice_negative">Nope I Love Mars</string>
+    
+    <string name="good_choice_positive">Let Us Be Free From Cancer!</string>
+    <string name="good_choice_negative">NeverMind I Love Cancer!</string>
+    
+    <string name="action_settings">Settings</string>
+
+</resources>
