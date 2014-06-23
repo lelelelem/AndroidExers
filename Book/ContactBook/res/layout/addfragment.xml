@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/RosyBrown"
+        android:scaleType="centerInside" />
+
+    <EditText
+        android:id="@+id/detail_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:hint="@string/add_Detail_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/take_picture_buton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_a_picture" />
+
+    <Button
+        android:id="@+id/add_detail_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_details" />
+
+</LinearLayout>
