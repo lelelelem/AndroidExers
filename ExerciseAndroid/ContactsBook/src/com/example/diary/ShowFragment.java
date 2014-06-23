@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ShowFragment extends Fragment {
 
@@ -25,7 +26,7 @@ public class ShowFragment extends Fragment {
 
 	private LinearLayout mLinearLayout;
 	private String mdataNodes[][];
-	private String ImgPath="homer.png";
+	
 	private TextView mTextView,mNameTextView;
 
 	private ModelClass modelClass;
@@ -34,9 +35,14 @@ public class ShowFragment extends Fragment {
 	private View.OnClickListener mClickListener = new OnClickListener() {
 		@Override
 		public void onClick(View v) {
+			if (modelClass.getImgPath().equals("homer")){
+				Toast.makeText(getActivity(), R.string.toast_some_error, Toast.LENGTH_SHORT);
+				return;
+			}
+			
 			android.support.v4.app.FragmentManager fm = getActivity()
 					.getSupportFragmentManager();
-			ImageDialog.newInstance(ImgPath).show(fm, IMAGE);
+			ImageDialog.newInstance(modelClass.getImgPath()).show(fm, IMAGE);
 		}
 	};
 
@@ -75,8 +81,6 @@ public class ShowFragment extends Fragment {
 			bitmap_drawable=PictureHandler.getScaledDrawable(getActivity(), modelClass.getImgPath());
 		}
 		mImageView.setImageDrawable(bitmap_drawable);
-		
-		
 		mImageView.setOnClickListener(mClickListener);
 		
 		//shows all other details added by the user

@@ -15,7 +15,7 @@
     
     <string name="toast_success">Entry Saved!!</string>
     <string name="toast_not_success">Entry Not Saved!!</string>
-    <string name="toast_some_error">Either The Name is Blank or The Detail</string>
+    <string name="toast_some_error">No Preview For Homer</string>
     
     <string name="details_textview">Details.....</string>
     
