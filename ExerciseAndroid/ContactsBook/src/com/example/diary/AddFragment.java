@@ -101,6 +101,7 @@ public class AddFragment extends Fragment {
 					
 					//passes linked list with detail values and UUI
 					mClass = new ModelClass(mLinkedList);
+					mLinkedList.printAllInfo();
 					mClass.setImgPath(ImgPath);
 					mClass.setName(mNameSeq.toString());
 					ModelSingleton.get(getActivity()).addDetails(mClass);

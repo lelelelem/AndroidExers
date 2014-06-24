@@ -31,6 +31,8 @@ class LinkedList implements Serializable{
 	String Tag = "DATANODE";
 	DataNode head, tail,holdInfo;
 	int size = 0;
+	
+	public static final String TAG="Datanode";
 
 	LinkedList() {
 		head = null;
@@ -90,6 +92,16 @@ class LinkedList implements Serializable{
 		}
 		
 		return infos;
+	}
+	
+public void printAllInfo(){
+		
+	
+		
+		for (holdInfo=head; holdInfo!=null; holdInfo=holdInfo.next) {
+			Log.i(TAG, "["+holdInfo.detail+"]"+"["+holdInfo.type+"]");
+		}
+		
 	}
 
 }

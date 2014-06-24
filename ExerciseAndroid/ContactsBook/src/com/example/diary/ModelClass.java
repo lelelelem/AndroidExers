@@ -54,14 +54,14 @@ public class ModelClass implements Serializable {
 		
 		//adds the details from the json array
 		for (int i = 0; i < jsonObject.length()-1; i++) {
-			Log.i(TAG, "IM INSIDE THE FOR LOOP!!!! ");
+			Log.i(TAG, "IM INSIDE THE FOR LOOP!!!! "+"JSON IS "+jsonObject.toString());
 			//catched used if ever a JsonId is not present in the array
 			try {
 				mLinkedList.add(jsonObject.getString(Integer.toString(seqID)+JSON_ID_TEXT), 0);
 				Log.i(TAG, "TEXT ADDED!! "+jsonObject.getString(Integer.toString(seqID)+JSON_ID_TEXT));
 			} catch (Exception e) {
 				//used to continue loop, breaking may lose some details
-				continue;
+				break;
 			}
 			seqID++;
 		}
@@ -72,18 +72,22 @@ public class ModelClass implements Serializable {
 	
 	public JSONObject toJsonObject() throws JSONException{
 		seqID=0;
+		
 		JSONObject jsonObject = new JSONObject();
 		if(mId==null){
 			Log.i(TAG, "ITS NULL DAMMIT");
 			Log.i(TAG, Integer.toString(mLinkedList.size));
 		}
-		
-		mId = UUID.randomUUID();
+		if(mId==null)
+			mId = UUID.randomUUID();
 
 		dataNode=mLinkedList.getInfo();
 		
 		jsonObject.put(JSON_ID_NAME, mName);
 		jsonObject.put(JSON_UID, mId.toString());
+		
+		Log.i(TAG, "PLACE MID"+mId.toString());
+		
 		jsonObject.put(JSON_ID_IMG, mImgPath);
 		
 		Log.i(TAG, "Start!");
@@ -91,6 +95,8 @@ public class ModelClass implements Serializable {
 		//places data from linked list to JsonArray
 		for(;dataNode!=null;dataNode=mLinkedList.getInfo()){
 			Log.i(TAG, "doing it");
+			Log.i(TAG, "Placing "+dataNode.detail+" "+dataNode.type);
+			
 			jsonObject.put(Integer.toString(seqID++)+JSON_ID_TEXT, dataNode.detail);			
 		}
 		

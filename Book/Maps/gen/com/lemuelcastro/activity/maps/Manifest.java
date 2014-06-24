@@ -9,6 +9,6 @@ package com.lemuelcastro.activity.maps;
 
 public final class Manifest {
     public static final class permission {
-        public static final String MAPS_RECEIVE="com.bignerdranch.android.runtracker.permission.MAPS_RECEIVE";
+        public static final String MAPS_RECEIVE="com.lemuelcastro.activity.maps.permission.MAPS_RECEIVE";
     }
 }

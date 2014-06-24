@@ -31,6 +31,7 @@ public class JSONSerializer {
 		JSONArray jsonArray = new JSONArray();
 		
 		Log.i(Tag, "SIZE IS "+modelClasses.size());
+		
 		for(ModelClass mc:modelClasses){
 			jsonArray.put(mc.toJsonObject());
 			Log.i(Tag, "PLACED IT");

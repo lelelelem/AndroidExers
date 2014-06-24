@@ -2,7 +2,9 @@
 <resources>
 
     <string name="app_name">Maps</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="not_available">Sadly the Map is Not Available</string>
+    
+    
     <string name="action_settings">Settings</string>
 
 </resources>
