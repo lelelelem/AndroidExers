@@ -11,6 +11,9 @@ import android.util.Log;
 public class ModelSingleton {
 	
 	private static ArrayList<ModelClass> mModelClasses;
+	
+	private static ModelSingleton mModelSingleton;
+	
 	private static final String TAG="ModelSingleTon";
 	private Context mContext;
 	
@@ -42,6 +45,7 @@ public class ModelSingleton {
 	}
 	
 	public static ArrayList<ModelClass> returnAll(){
+		Log.i(TAG, "WOHOO HEre!"+mModelClasses.size());
 		return mModelClasses;
 	}
 	
