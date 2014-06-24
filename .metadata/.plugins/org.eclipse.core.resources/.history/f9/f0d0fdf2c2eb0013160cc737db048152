@@ -1,0 +1,10 @@
+
+public class Chapter13Class<T> {
+
+	void <T> push(){
+		
+		
+	}
+	
+	
+}

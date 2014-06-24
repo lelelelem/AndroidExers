@@ -1,0 +1,35 @@
+
+import java.awt.*;
+import java.awt.geom.Ellipse2D;
+import java.applet.*;
+
+public class Exercises extends Applet implements Runnable{	
+	
+	public void init(){
+		
+		
+		
+	}
+	
+	public void start(){
+		
+	}
+	
+	
+	public void paint(Graphics g){
+
+		
+	}
+	
+	public void stop(){
+		
+		
+	}
+	
+	public void destroy(){
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,36 @@
+
+import java.applet.Applet;
+import java.util.*;
+
+class Exercise {	
+	
+	  public static void main(String args[])
+	    { 
+	       int number;
+	       
+	       System.out.print(number);
+	    }
+	
+	
+	
+}
+class A {
+A() {
+	System.out.println(“A”);
+}
+
+void myMethod() {
+	System.out.println(“A myMethod”);
+}
+}
+ 
+class B {
+B() {
+	System.out.println(“B”);
+}
+
+void myMethod() {
+	System.out.println(“B myMethod”);
+}
+}
+

@@ -1,0 +1,32 @@
+
+class Chapter12Class extends Thread {
+
+	
+	Chapter12Class(){
+		start();
+	}
+	
+	enum StopLight{
+		
+		Red(1000), Yellow(500), Green(1000);
+		
+		private int Delay;
+		
+		int getDelay(){
+			
+			return Delay;
+		}
+	}
+	
+	public void run(){
+			
+		while(true){
+			for(StopLight SLNew: StopLight.values()){
+				System.out.println(SLNew);
+				Thread.sleep(SLNew.getDelay());
+				
+			}
+		}
+	}
+		
+}

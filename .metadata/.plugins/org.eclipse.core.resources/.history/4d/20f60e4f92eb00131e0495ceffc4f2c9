@@ -1,0 +1,5 @@
+package CustomErrors;
+
+public class StackOverKill {
+
+}

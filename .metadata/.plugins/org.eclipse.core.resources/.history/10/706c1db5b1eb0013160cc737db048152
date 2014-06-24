@@ -1,0 +1,11 @@
+import java.lang.*;
+
+public class Chapter11Class implements Runnable {
+
+	
+	public void run() {
+		System.out.println("Running...");
+		
+	}
+
+}

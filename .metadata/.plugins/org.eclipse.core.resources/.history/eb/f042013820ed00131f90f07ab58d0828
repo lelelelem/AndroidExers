@@ -1,0 +1,9 @@
+
+public class classy {
+
+	public class main{
+		
+		classy.main cm = new classy.main();
+	}
+	
+}

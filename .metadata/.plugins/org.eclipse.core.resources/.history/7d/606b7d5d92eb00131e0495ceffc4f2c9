@@ -1,0 +1,11 @@
+package CustomErrors;
+
+public class StackOverKill extends Exception {
+	
+		
+		StackOverKill(){
+			
+			System.out.print("I Cant push anymore");
+		}
+
+}

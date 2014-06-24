@@ -1,0 +1,37 @@
+
+public class Chapter13Class<T extends Number> {
+
+	
+	private T GenVariable;
+	private int maxsize;
+	private int currSize=0;
+	
+	
+	
+	Chapter13Class(T PassedTypeValue){
+		
+	
+	}
+	
+	<T extends Number> int dumb(T...o){
+		
+		Integer sum = new Integer(0);
+		
+		
+		
+		for (T o2:o){
+			
+			Integer number = new Integer(o2);
+			
+			sum += number; 
+			
+		}
+		
+		
+		return ;
+	}
+	
+	
+	
+	
+}

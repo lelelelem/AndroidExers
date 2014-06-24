@@ -1,0 +1,16 @@
+
+import java.io.*;
+import java.util.*;
+
+
+abstract class Files {
+
+	FileInputStream fs;
+	
+	Files(){
+		
+		fs = new FileInputStream("file.txt");
+		
+	}
+	
+}

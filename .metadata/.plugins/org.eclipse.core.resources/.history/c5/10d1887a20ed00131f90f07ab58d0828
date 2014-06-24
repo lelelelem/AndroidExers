@@ -1,0 +1,65 @@
+
+import java.applet.Applet;
+import java.util.*;
+
+class Exercise extends Applet implements Runnable{	
+	
+	public static void main(String args[]){
+	
+		
+
+		
+		MyOuter m2 = new MyOuter();
+
+		
+		
+	}
+
+	public void init(){
+		
+		int [] lem[];
+		
+	}
+	
+	public void start(){
+		Thread Tr = new Thread(this);
+		Tr.start();
+		
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while(true){
+			repaint();
+			try {
+				Thread.sleep(17);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public void paint(){
+
+	}
+	
+	
+	
+	
+	
+	public void stop(){
+		
+		
+	}
+	
+	public void destroy(){
+		
+		
+	}
+	
+	
+	
+	
+}

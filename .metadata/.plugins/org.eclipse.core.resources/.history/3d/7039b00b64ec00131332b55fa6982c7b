@@ -1,0 +1,59 @@
+
+import java.awt.*;
+import java.applet.*;
+
+public class Exercises extends Applet implements Runnable{	
+	
+	private Thread trigger;
+	private int i= 0;
+	
+
+	public void init(){
+		
+		trigger = null;
+		
+		
+	}
+	
+	public void start(){
+		
+		trigger = new Thread(this);
+		trigger.start();
+	}
+	
+	public void run(){
+		
+		for(;;){
+			repaint();
+			i++;
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}			
+		}
+		
+	}
+	
+	
+	public void paint(Graphics g){
+		
+		String number = Integer.toString(i);
+		g.drawString(number, 20, 20);
+		
+		
+	}
+	
+	public void stop(){
+		
+		
+	}
+	
+	public void destroy(){
+		
+		
+	}
+	
+	
+}

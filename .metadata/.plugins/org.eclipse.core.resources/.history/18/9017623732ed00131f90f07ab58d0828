@@ -1,0 +1,13 @@
+
+  class MyOuter {
+
+	void fun(){
+		try{
+			
+		}
+		finally{
+			
+		}
+		
+	}
+}

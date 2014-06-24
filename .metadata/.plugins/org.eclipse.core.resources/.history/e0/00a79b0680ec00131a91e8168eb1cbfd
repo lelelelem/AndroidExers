@@ -1,0 +1,47 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class Chapter15Class implements ActionListener {
+
+	JLabel label;
+	
+	Chapter15Class(){
+		
+		JFrame jf = new JFrame("Sample");
+		
+		jf.setSize(400, 400);
+		jf.setLayout(new FlowLayout());
+		
+		JButton jb = new JButton("Circle");
+		JButton jb2 = new JButton("Square");
+		
+		jb.addActionListener(this);
+		jb2.addActionListener(this);
+		
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		label = new JLabel("Well this is something");
+		
+		jf.add(label);
+		jf.add(jb);
+		jf.add(jb2);
+		
+		jf.setVisible(true);
+		
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		
+		if (arg0.getActionCommand().equals("Circle"))
+			label.setText("Its a Circle");
+		else
+			label.setText("Its a Square");
+		
+		
+	}
+	
+}

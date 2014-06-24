@@ -1,0 +1,17 @@
+
+class Chapter7Class {
+
+	final Pi = 3.14
+	
+	
+}
+
+class TwoDShape{
+	
+	double radius;
+	
+	TwoDShape(double radius){
+		this.radius = radius;
+	}
+	
+}

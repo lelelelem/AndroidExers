@@ -1,0 +1,26 @@
+import java.lang.*;
+
+public class Chapter11Class extends Thread {
+
+	private String Name;
+	
+	Chapter11Class(String Name){
+		this.Name = Name;
+		start();
+	}
+	
+	public void run() {
+		
+			try {
+				while(true){
+				System.out.println(Name);
+				Thread.sleep(400);
+				}
+			} catch (InterruptedException e) {			
+				e.printStackTrace();
+			}
+	
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+
+import java.applet.Applet;
+import java.util.*;
+
+class Exercise {	
+	
+	  public static void main(String args[])
+	    { 
+	       int number;
+	       
+	       System.out.print(number);
+	    }
+	
+	
+	
+}

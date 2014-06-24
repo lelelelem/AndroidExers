@@ -1,0 +1,43 @@
+
+import java.applet.Applet;
+import java.util.*;
+
+class Exercise {	
+
+	
+	  public static void main(String args[])
+	    { 
+		  
+	    }
+	
+	
+}
+
+class C extends A{
+	
+	
+}
+
+class A<T, V>{
+	
+	
+	enum phones{
+		
+		
+	}
+}
+
+class B extends A{
+	
+	
+	B() {
+		super("");
+		System.out.println("B");
+	}
+
+		
+	String myMethod() {
+		System.out.println("B my method");
+		return null;
+	}
+}

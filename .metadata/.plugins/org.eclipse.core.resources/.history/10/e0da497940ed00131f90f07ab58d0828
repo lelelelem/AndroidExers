@@ -1,0 +1,19 @@
+
+  class MyOuter {
+
+	void fun(){
+		try{
+			
+		}
+		finally{
+			
+		}
+		Integer i =1;
+		
+		String i2 = new String();
+		
+		
+		Boolean b2 =true;
+		boolean b1 = b2.booleanValue();
+	}
+}

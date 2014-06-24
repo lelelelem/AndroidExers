@@ -1,0 +1,14 @@
+
+class Chapter7Class {
+
+}
+
+class TwoDShape{
+	
+	double radius;
+	
+	TwoDShape(double radius){
+		this.radius = radius;
+	}
+	
+}

@@ -1,0 +1,14 @@
+
+  class MyOuter {
+
+	void fun(){
+		try{
+			
+		}
+		finally{
+			
+		}
+		Boolean b2 =true;
+		boolean b1 = b2.booleanValue();
+	}
+}

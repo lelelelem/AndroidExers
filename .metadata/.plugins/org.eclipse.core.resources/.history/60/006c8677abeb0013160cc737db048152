@@ -1,0 +1,22 @@
+
+import java.io.*;
+import java.util.*;
+
+
+abstract class Files {
+
+	FileInputStream fs;
+	Scanner in;
+	
+	Files() throws FileNotFoundException{
+		
+		fs = new FileInputStream("file.txt");
+		in = new Scanner(fs);
+	}
+	
+	Scanner ReturnFile(){
+		return in;
+	}
+	
+	
+}

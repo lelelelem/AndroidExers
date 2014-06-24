@@ -1,0 +1,50 @@
+/*comments will only be used in not so obvious things*/
+
+
+import java.io.IOException;
+
+public class Chapter6Class {
+
+		private int maxSize;
+		private int currSize=0;
+		
+		private char charStack[];
+		
+		Chapter6Class(int size){
+			
+			maxSize = size;
+			charStack = new char[size];
+			
+			System.out.println("Stack max size initialized to "+maxSize);
+		}
+		
+		void push() throws IOException{
+
+			try {
+				System.out.println("Input Char to push:");
+				charStack[currSize++] = (char)System.in.read();
+				System.out.println("Current Stack size now "+currSize);
+			} 
+			finally{
+				return;
+			}
+			
+		}
+		
+		void pop(){
+			try {
+				System.out.println("Character popped is "+ charStack[--currSize]);
+				System.out.println("Current Stack size now "+currSize);
+			} catch (Exception e) {
+				System.out.print("No values to pop anymore");
+				currSize=0;
+			}
+			catch (Throwable e) {
+				System.out.print("Cant Push values anymore");
+			}
+			finally{
+				return;
+			}
+		}
+		
+}

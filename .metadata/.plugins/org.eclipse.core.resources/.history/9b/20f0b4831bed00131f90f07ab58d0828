@@ -1,0 +1,46 @@
+import java.awt.*;
+import java.awt.geom.Line2D;
+
+import javax.swing.*;
+
+
+
+class setGUI{
+	
+	DrawingPanel dp = new DrawingPanel();
+	MouseAdapter Ma = new MouseAdapter(dp);
+	JPanel Menu = new JPanel();
+	
+	JLabel jl;
+	
+	
+	setGUI(){
+		
+		dp.addMouseListener(Ma);
+		dp.setSize(600, 400);
+		
+		jl = new JLabel("Paint");
+		
+		Menu.add(jl);
+		Menu.setBounds(600, 0, 200, 400);
+		Menu.setBackground(Color.gray);
+		
+		JFrame jf = new JFrame("mehehe");
+		
+		jl = new JLabel("Yoh");
+		jl.setSize(100, 100);
+		
+		
+		jf.setSize(800, 400);
+		
+		jf.add(dp);
+		jf.add(Menu);
+		
+		
+		
+		jf.setVisible(true);
+		
+	}
+	
+	
+}

@@ -1,0 +1,6 @@
+
+public abstract class LinkedList {
+	
+		int x, y, PrevX, PrevY;
+	
+}

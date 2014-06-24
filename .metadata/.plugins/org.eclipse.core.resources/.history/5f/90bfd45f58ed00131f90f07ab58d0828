@@ -1,0 +1,21 @@
+
+import java.applet.Applet;
+import java.util.*;
+
+class Exercise {	
+
+	
+	  public static void main(String args[])
+	    { 
+		  
+	    }
+	
+	
+}
+
+class A<T, V>{
+	
+	
+}
+
+

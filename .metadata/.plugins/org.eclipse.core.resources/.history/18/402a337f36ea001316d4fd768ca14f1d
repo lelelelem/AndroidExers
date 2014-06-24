@@ -1,0 +1,13 @@
+
+public class Chapter3Class {
+
+	void ChangeCases(){
+		
+		//97-122 lowercase characters
+		//65-90 uppercase characters
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,12 @@
+
+
+abstract class Files {
+
+	String FName = "file.txt";
+	
+	String ReturnFile(){
+		return FName;
+	}
+	
+	
+}

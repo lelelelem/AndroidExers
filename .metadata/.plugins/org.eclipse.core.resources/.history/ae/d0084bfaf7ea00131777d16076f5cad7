@@ -1,0 +1,18 @@
+
+class Chapter7Class extends TwoDShape{
+
+	final double Pi = 3.14;
+	
+	
+	
+}
+
+class TwoDShape{
+	
+	double radius;
+	
+	TwoDShape(double radius){
+		this.radius = radius;
+	}
+	
+}

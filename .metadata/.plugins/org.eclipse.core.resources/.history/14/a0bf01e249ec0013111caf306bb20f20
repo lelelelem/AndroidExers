@@ -1,0 +1,13 @@
+
+public class Chapter13Class<T> {
+
+	
+	private T GenVar;
+	
+	Chapter13Class(){
+		
+			
+	}
+	
+	
+}

@@ -1,0 +1,27 @@
+
+public class Chapter13Class<T extends Number> {
+
+
+	<T extends Number> int dumb(T...o){
+		
+		Integer sum = new Integer(0);
+		
+		
+		
+		for (T o2:o){
+			
+			Integer number = new Integer((Integer) o2);
+			
+			sum += number; 
+			
+		}
+		
+		int i = sum;
+		
+		return i;
+	}
+	
+	
+	
+	
+}

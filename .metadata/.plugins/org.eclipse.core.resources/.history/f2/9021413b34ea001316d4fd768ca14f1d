@@ -1,0 +1,21 @@
+import java.io.IOException;
+
+
+public class Chapter3Class {
+
+	//gets input per char until a period is recieved
+	//number of spaces is also counted
+	int getCharInput() throws IOException{
+		
+		int SpaceCounter= 0;
+		
+		for(char c='a';c!='.';c = (char)System.in.read()){
+			if (c ==' '){
+				SpaceCounter++;
+			}
+			
+		}
+		
+	}
+	
+}

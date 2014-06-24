@@ -1,0 +1,9 @@
+
+public class classy {
+
+	publi cclass main{
+		
+		classy.main cm = new classy.main();
+	}
+	
+}

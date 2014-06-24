@@ -1,0 +1,27 @@
+
+class Chapter12Class extends Thread {
+
+	
+	Chapter12Class(){
+		start();
+	}
+	
+	enum StopLight{
+		
+		Red, Yellow, Green;
+	}
+	
+	public void run(){
+		
+		System.out.print("im running");
+		
+	}
+	
+	synchronized void ToRed() throws InterruptedException{
+		wait();
+		Thread.sleep(1000);
+		notify();
+	}
+	
+	
+}

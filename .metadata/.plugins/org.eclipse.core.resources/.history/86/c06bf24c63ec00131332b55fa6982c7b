@@ -1,0 +1,36 @@
+
+import java.awt.*;
+import java.applet.*;
+
+public class Exercises extends Applet{	
+	
+
+	public void init(){
+		
+		
+	}
+	
+	public void start(){
+		
+		
+	}
+	
+	
+	public void paint(Graphics g){
+		
+		g.drawString("Lemuel", 20, 20);
+		
+	}
+	
+	public void stop(){
+		
+		
+	}
+	
+	public void destroy{
+		
+		
+	}
+	
+	
+}

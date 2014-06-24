@@ -1,0 +1,55 @@
+
+import java.applet.Applet;
+import java.util.*;
+
+class Exercise {	
+
+	  final static short x = 2;
+	  public static void main(String args[])
+	    { 
+		  
+	      B b = new B();
+	      b.myMethod();
+	      
+	      double d = Math.round(2.5);
+	      System.out.print(d);
+	      
+	      for (int z=0; z < 3; z++) 
+	        {
+	            switch (z) 
+	            {
+	                case x: System.out.print("0 ");
+	                case x-1: System.out.print("1 ");
+	                case x-2: System.out.print("2 ");
+	            }
+	        }
+	    }
+	
+	
+	
+}
+
+class A{
+	
+	
+	A(String s) {
+		System.out.println("A");
+	}
+
+	void myMethod() {
+		System.out.println("A my method");
+	}
+}
+
+class B extends A{
+	
+	
+	B() {
+		super("");
+		System.out.println("B");
+	}
+
+	void myMethod() {
+		System.out.println("B my method");
+	}
+}

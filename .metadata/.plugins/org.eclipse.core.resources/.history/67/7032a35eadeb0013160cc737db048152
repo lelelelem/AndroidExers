@@ -1,0 +1,40 @@
+import java.io.*;
+import java.util.Scanner;
+
+
+public class Chapter10Class extends Files {
+
+	private FileInputStream FSOriginal;
+	private Scanner inOriginal;
+	
+	private FileWriter FSNew;
+	
+	
+	Chapter10Class()throws FileNotFoundException{
+		
+		FSOriginal = new FileInputStream(ReturnFileNameOriginal());
+		inOriginal = new Scanner(FSOriginal);
+		
+		FSNew = new FileWriter(ReturnFileNameNew());
+	
+	}
+	
+	void Read() throws IOException{
+		
+		while(inOriginal.hasNext()){
+			
+			char c = (char)inOriginal.nextByte();
+			
+			c = c==' '? '-':c;
+			
+			FSNew.write(c);
+			
+			
+		}
+		
+		FSNew.close();
+		FSOriginal.close();
+		
+	}
+	
+}

@@ -1,0 +1,40 @@
+import java.io.*;
+import java.util.Scanner;
+
+
+public class Chapter10Class extends Files {
+
+	private FileInputStream FSOriginal;
+	
+	
+	private FileOutputStream FSNew;
+	
+	
+	Chapter10Class()throws IOException{
+		
+		FSOriginal = new FileInputStream(ReturnFileNameOriginal());
+		
+		
+		FSNew = new FileOutputStream(ReturnFileNameNew());
+	
+	}
+	
+	void Read() throws IOException{
+		
+		char i='`';
+		
+		for(;i!=(char)(-1);i=(char)FSOriginal.read()){
+			System.out.print(i);
+			i = (char)i == ' '||(char)i == '`'? '-':i;
+			
+			
+			FSNew.write(i);
+			
+		}
+		
+		FSNew.close();
+		FSOriginal.close();
+		
+	}
+	
+}

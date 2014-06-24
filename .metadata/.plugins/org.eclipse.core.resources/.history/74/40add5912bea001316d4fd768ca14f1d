@@ -1,0 +1,8 @@
+
+public class Chapter1Class {
+	void MoonWeight(){
+		int weight_kg = 60;
+		System.out.println("You Weigh "+weight_kg+" kg in Earth Means Your Fat");
+		System.out.println("Dont Worry you Weigh" +(double)(weight_kg*0.17)+"In the Moon though");
+	}
+}

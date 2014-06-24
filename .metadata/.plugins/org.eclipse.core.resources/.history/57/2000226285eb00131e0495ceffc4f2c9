@@ -1,0 +1,13 @@
+package ExercisePack;
+
+public class Chapter8Class {
+
+	public int var;
+	
+	public void print(){
+		
+		
+	}
+	
+	
+}

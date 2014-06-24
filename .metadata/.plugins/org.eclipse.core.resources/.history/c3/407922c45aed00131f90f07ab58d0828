@@ -1,0 +1,42 @@
+
+import java.applet.Applet;
+import java.util.*;
+
+class Exercise {	
+
+	
+	  public static void main(String args[])
+	    { 
+		  
+	    }
+	
+	
+}
+
+class A<T, V>{
+	
+	
+	A(String s) {
+		System.out.println("A");
+	}
+
+	final String myMethod() {
+		System.out.println("A my method");
+		return null;
+	}
+}
+
+class B extends A{
+	
+	
+	B() {
+		super("");
+		System.out.println("B");
+	}
+
+		
+	String myMethod() {
+		System.out.println("B my method");
+		return null;
+	}
+}

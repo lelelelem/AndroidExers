@@ -1,0 +1,9 @@
+
+public class MyOuter {
+
+	public class MyInner{
+		
+		
+	}
+	
+}

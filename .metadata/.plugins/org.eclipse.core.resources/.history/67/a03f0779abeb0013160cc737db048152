@@ -1,0 +1,15 @@
+
+import java.io.*;
+import java.util.*;
+
+
+abstract class Files {
+
+	String FName = "file.txt";
+	
+	String ReturnFile(){
+		return FName;
+	}
+	
+	
+}

@@ -1,0 +1,20 @@
+
+import java.util.*;
+
+class Exercise {	
+	
+	public static void main(String args[]) throws InterruptedException{
+	
+		Chapter11Class c11 = new Chapter11Class("c11");
+		Chapter11Class c11b = new Chapter11Class("c11b");
+		
+		c11.setPriority(Thread.NORM_PRIORITY+3);
+		
+		while(true){
+			Thread.sleep(100);
+			
+		}
+		
+	}
+	
+}

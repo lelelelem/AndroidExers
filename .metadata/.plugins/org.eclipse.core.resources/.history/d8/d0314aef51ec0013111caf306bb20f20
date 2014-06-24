@@ -1,0 +1,19 @@
+
+public class Chapter13Class<T extends Number> {
+
+	
+	private T GenArray[];
+	private int maxsize;
+	private int currSize=0;
+	
+	
+	
+	Chapter13Class(T PassedTypeValue, int maxsize, int currSize){
+		this.maxsize = maxsize;
+	
+	}
+	
+	
+	
+	
+}
