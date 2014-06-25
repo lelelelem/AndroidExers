@@ -8,5 +8,7 @@ gen/
 build/
 local.properties
 proguard/
+Book
 *.log
+Android
 

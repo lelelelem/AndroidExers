@@ -46,7 +46,7 @@ public class ModelClass implements Serializable {
 		Log.i(TAG, "JSON LENGTH "+jsonObject.length());
 		Log.i(TAG, "JSON VALUE "+jsonObject.toString());
 		
-		mLinkedList.add(jsonObject.getString(JSON_UID), 1); 
+		
 		mImgPath=jsonObject.getString(JSON_ID_IMG);
 		mName = jsonObject.getString(JSON_ID_NAME);
 		
@@ -81,8 +81,8 @@ public class ModelClass implements Serializable {
 		if(mId==null)
 			mId = UUID.randomUUID();
 
-		dataNode=mLinkedList.getInfo();
 		
+		dataNode=mLinkedList.getInfo();
 		jsonObject.put(JSON_ID_NAME, mName);
 		jsonObject.put(JSON_UID, mId.toString());
 		
@@ -93,7 +93,7 @@ public class ModelClass implements Serializable {
 		Log.i(TAG, "Start!");
 		
 		//places data from linked list to JsonArray
-		for(;dataNode!=null;dataNode=mLinkedList.getInfo()){
+		for(dataNode=mLinkedList.getInfo();dataNode!=null;dataNode=mLinkedList.getInfo()){
 			Log.i(TAG, "doing it");
 			Log.i(TAG, "Placing "+dataNode.detail+" "+dataNode.type);
 			

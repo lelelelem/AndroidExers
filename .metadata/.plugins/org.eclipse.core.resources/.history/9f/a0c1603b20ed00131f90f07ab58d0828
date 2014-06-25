@@ -1,9 +1,0 @@
-
-public class MyOuter {
-
-	public class MyInner{
-		
-		classy.main cm = new classy.main();
-	}
-	
-}

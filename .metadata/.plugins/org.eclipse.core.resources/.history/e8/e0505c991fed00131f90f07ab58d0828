@@ -1,9 +1,0 @@
-
-public class classy {
-
-	class main{
-		
-		classy.main = new main();
-	}
-	
-}

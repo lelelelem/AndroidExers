@@ -1,5 +1,0 @@
-package ExercisePack;
-
-public interface Authenticate {
-
-}

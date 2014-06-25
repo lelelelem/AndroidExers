@@ -4,11 +4,12 @@
 *.class
 bin/
 gen/
-Book
-Android
 .gradle/
 build/
 local.properties
 proguard/
+Book
 *.log
+Android
+volley
 

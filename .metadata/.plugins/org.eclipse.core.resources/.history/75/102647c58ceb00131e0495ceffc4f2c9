@@ -1,9 +1,0 @@
-package ExercisePack;
-
-public interface Authenticate {
-	void GetUserName(String UName);
-	
-	void GetPassWord(String PWord);
-	
-	boolean isAuthenticated();
-}
