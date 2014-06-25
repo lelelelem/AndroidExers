@@ -1,28 +1,20 @@
 package com.lemuel.exercise.contextmenu;
 
-import android.R.integer;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.internal.*;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.TextView;
 
 public class FragmentMenu extends Fragment {
 
 	private TextView mTextColor;
 	private TextView mTextSize;
-	
-	private Menu mMenu;
-	
 	
 	
 	@Override

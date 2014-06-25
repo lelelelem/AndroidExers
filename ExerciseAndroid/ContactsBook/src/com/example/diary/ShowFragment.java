@@ -25,7 +25,7 @@ public class ShowFragment extends Fragment {
 	public static final String IMAGE = "showfrag";
 
 	private LinearLayout mLinearLayout;
-	private String mdataNodes[][];
+	private String mdataNodes[];
 	
 	private TextView mTextView,mNameTextView;
 
@@ -88,17 +88,14 @@ public class ShowFragment extends Fragment {
 			//to hide UUID which has data type of 1
 			//mDataNode[i][1] denotes to Type
 			//mDataNode[i][0] denotes is the detail
-			if (mdataNodes[i][1].equals("1"))
-				continue;
-
-			if (mdataNodes[i][1].equals("0")) {
+		
 				Log.i(Tag, "Text");
 				mTextView = new TextView(getActivity());
 				mTextView.setTextSize(30.0f);
 				mTextView.setGravity(Gravity.CENTER_HORIZONTAL);
-				mTextView.setText(mdataNodes[i][0]);
+				mTextView.setText(mdataNodes[i]);
 				mLinearLayout.addView(mTextView);
-			}
+			
 		}
 
 		return view;

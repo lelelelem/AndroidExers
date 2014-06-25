@@ -2,18 +2,8 @@ package com.lemuelcastro.exercises.volleylru;
 
 import java.util.ArrayList;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

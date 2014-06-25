@@ -74,7 +74,7 @@ public class AddFragment extends Fragment {
 					nTextView.setBackgroundColor(getResources().getColor(R.color.BurlyWood));
 					nTextView.setTextColor(Color.WHITE);
 					mMain.addView(nTextView);
-					mLinkedList.add(mDetailSeq.toString(), 0);
+					mLinkedList.add(mDetailSeq.toString());
 					mTitleEditText.setText("");	
 				} catch (Exception e) {
 					//To Avoid Exit when no Detail is typed

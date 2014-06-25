@@ -16,8 +16,7 @@ public class DataNode implements Serializable{
 
 	DataNode next;
 	String detail;
-	//used for checking if ID, or plain detail only
-	int type;
+	
 
 	public DataNode() {
 		next = null;
@@ -31,6 +30,7 @@ class LinkedList implements Serializable{
 	String Tag = "DATANODE";
 	DataNode head, tail,holdInfo;
 	int size = 0;
+	boolean first=true;
 	
 	public static final String TAG="Datanode";
 
@@ -39,7 +39,7 @@ class LinkedList implements Serializable{
 		tail = null;
 	}
 
-	public void add(String detail, int type) {
+	public void add(String detail) {
 		DataNode temp = new DataNode();
 		
 		Log.i(Tag, "Adding Details on DataNode");
@@ -48,17 +48,15 @@ class LinkedList implements Serializable{
 		
 		if (size == 0) {
 			head = temp;
-			holdInfo=head;
 			tail = temp;
 			head.detail = detail;
-			head.type = type;
+			holdInfo=head;
 			tail.next = null;
 		} else {
 			tail.next = temp;
 			tail = temp;
 			tail.next = null;
 			tail.detail = detail;
-			tail.type = type;
 		}
 		size++;
 	}
@@ -66,10 +64,17 @@ class LinkedList implements Serializable{
 	public DataNode getInfo() {
 		DataNode temp;
 		
-		if(holdInfo==null){
-			Log.i(Tag, "NULL");
+		
+		if(holdInfo==null&&!first){
+			Log.i(TAG, "NULL ALREADY");
 			holdInfo=head;
 			return null;
+		}
+		
+		if (first){
+			Log.i(TAG, "FIRST TIME");
+			holdInfo=head;
+			first=false;
 		}
 		
 		temp=holdInfo;
@@ -79,16 +84,15 @@ class LinkedList implements Serializable{
 		return temp;
 	}
 	
-	public String[][] getAllInfo(){
+	public String[] getAllInfo(){
 		
-		String infos[][]=new String[size][2];
-		int detail=0, type=detail;
+		String infos[]=new String[size];
+		int detail=0;
 		
 		for (holdInfo=head; holdInfo!=null; holdInfo=holdInfo.next) {
-			infos[detail][type++]=holdInfo.detail;
-			infos[detail][type]=Integer.toString(holdInfo.type);
+			infos[detail]=holdInfo.detail;
+			Log.i(TAG, "["+holdInfo.detail+"] is added");
 			detail++;
-			type=0;
 		}
 		
 		return infos;
@@ -99,7 +103,7 @@ public void printAllInfo(){
 	
 		
 		for (holdInfo=head; holdInfo!=null; holdInfo=holdInfo.next) {
-			Log.i(TAG, "["+holdInfo.detail+"]"+"["+holdInfo.type+"]");
+			Log.i(TAG, "["+holdInfo.detail+"]");
 		}
 		
 	}

@@ -1,7 +1,6 @@
 package com.example.dialog;
 
 
-import android.R.integer;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;

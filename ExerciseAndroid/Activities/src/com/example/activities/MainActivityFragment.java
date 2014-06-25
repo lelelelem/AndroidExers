@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,7 +14,6 @@ import android.widget.EditText;
 
 public class MainActivityFragment extends Fragment {
 
-	private String TAG = "log";
 	
 	//creates a CharSequence which will be sent as an extra
 	private CharSequence mCb;
