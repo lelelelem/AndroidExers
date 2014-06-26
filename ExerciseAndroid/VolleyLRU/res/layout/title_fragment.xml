@@ -3,16 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:layout_gravity="center_vertical"
-    android:gravity="center"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
     android:background="@color/Purple">
 
+    
+    <EditText 
+        android:textSize="20sp"
+        android:hint="@string/hint"
+        android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+        android:textColor="@color/White"
+        android:id="@+id/artist_edittext"/>
+    
     <TextView 
         android:textSize="40sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/White"
         android:text="@string/title"/>    
-    
+        
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_button"
+        android:text="@string/search"/>
+  
 
 </LinearLayout>

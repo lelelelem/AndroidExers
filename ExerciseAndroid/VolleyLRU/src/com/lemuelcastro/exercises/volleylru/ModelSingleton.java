@@ -28,6 +28,7 @@ public class ModelSingleton {
 		
 		mjsonSerializer = new JSONSerializer();
 		
+		//creates a new instance of ArrayList of ModelClasses
 		mModelClasses = mjsonSerializer.method(mContext, response);
 		
 		Log.i(TAG, "WOHOO "+mModelClasses.size());

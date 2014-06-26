@@ -24,6 +24,8 @@ public class PictureHandler {
 		float srcWidth = options.outWidth;
 		float srcHeight = options.outHeight;
 		int inSampleSize = 1;
+		
+		
 		if (srcHeight > destHeight || srcWidth > destWidth) {
 			if (srcWidth > srcHeight) {
 				inSampleSize = Math.round(srcHeight / destHeight);

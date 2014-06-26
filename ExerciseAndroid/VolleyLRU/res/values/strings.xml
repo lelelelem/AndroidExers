@@ -2,7 +2,10 @@
 <resources>
 
     <string name="app_name">VolleyLRU</string>
-    <string name="title">YAHOOO!!!</string>
+    <string name="title">SEARCH</string>
+    <string name="hint">Enter Artist Title</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
     <string name="action_settings">Settings</string>
 
 </resources>
